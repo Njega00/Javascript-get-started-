@@ -132,3 +132,7 @@ let person2 = {
 
 console.log(person2['first-name']) // this will output "Alice"
 console.log(person2['last-name']) // this will output "Johnson"
+
+
+
+
