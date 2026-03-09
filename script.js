@@ -133,6 +133,23 @@ let person2 = {
 console.log(person2['first-name']) // this will output "Alice"
 console.log(person2['last-name']) // this will output "Johnson"
 
+// Tricks used in objects
 
+// 1. Using object destructuring to extract values from an object:
+let user2 = {
+  name: 'Bob',
+  age: 25,
+  isAdmin: false,
+}
 
+let { name, age } = user2
+console.log(name) // "Bob"
+console.log(age) // 25
 
+// 2. Using computed property names to create dynamic object keys:
+let key = 'email'
+let user3 = {
+  name: 'Charlie',
+  [key]: 'charlie@example.com',
+}
+console.log(user3.email) // 'charlie@example.com'
